@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Dosis', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    
+}
+
+
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+}
+
+header >h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    fon
+    /*para mudar o texto para letras maiusculas pode-se usar o text-transformer*/
+}
+header >p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2vh;
+    font-weight: bold;
+    /*altura da linha: line0height*/
+}
+section.normal{
+    background-color: white;
+    color: black;
+    
+
+}
+section.normal>p{
+    padding-bottom: 2em;
+    
+}
+section.imagem{
+    background-color: rgba(51, 51, 51, 0.616);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 10px 10px 10px 0px black;
+}
+section.imagem >p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
+    
+}
+
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+}
+section#img2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vh;
+}
